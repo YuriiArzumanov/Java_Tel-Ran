@@ -1,4 +1,4 @@
-package hw111222;
+package de.telran.yuriiarzumanov.hw111222;
 
 // напишите программу, которая принимает 1 число - год
 // (можно с помощью Scanner или с помощью Random)
