@@ -1,4 +1,4 @@
-package de.telran.yuriiarzumanov.lessos9;
+package de.telran.yuriiarzumanov.lesson9;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package de.telran.yuriiarzumanov.lessos9;
+package de.telran.yuriiarzumanov.lesson9;
 
 public class LangTest {
     public static void main(String[] args) {

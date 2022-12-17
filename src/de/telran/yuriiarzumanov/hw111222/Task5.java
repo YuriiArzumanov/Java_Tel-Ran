@@ -1,4 +1,4 @@
-package de.telran.yuriiarzumanov.hw111222;
+/*package de.telran.yuriiarzumanov.hw111222;
 
 import java.util.Random;
 
@@ -22,4 +22,4 @@ public class Task5 {
         }
 
     }
-
+*/
