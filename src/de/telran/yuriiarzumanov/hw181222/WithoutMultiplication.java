@@ -7,7 +7,6 @@ package de.telran.yuriiarzumanov.hw181222;
 public class WithoutMultiplication {
     public static void main(String[] args) {
         int num = 9;
-        int sum = 0;
         for (int i = num; i <= num ; i++) {
             for (int j = num; j <= num ; j++) {
                 for (int k = num; k <=num ; k++) {
