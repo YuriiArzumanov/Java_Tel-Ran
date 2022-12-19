@@ -7,13 +7,14 @@ package de.telran.yuriiarzumanov.hw181222;
 public class OddNumbersMean {
     public static void main(String[] args) {
         int sum = 0 ;
+        int count = 0;
         for (int i = 1; i <=100; i+=2) {
             sum += i;
+            count++;
             System.out.println(i);
         }
-            System.out.println(sum);
+            System.out.println( " сумма количество элементов = "   +   sum / count);
 
     }
 }
 
-// Дальше не пойму действия какие делать "после цикла разделить сумму на количество элементов"
