@@ -6,7 +6,7 @@ public class NumbersLess0 {
     public static void main(String[] args) {
         int num = -10;
         int num2 = -40;
-        for (int i = num2; i <=num ; i++) {
+        for (int i = num; i >=num2 ; i--) {
             System.out.println(i);
         }
     }
