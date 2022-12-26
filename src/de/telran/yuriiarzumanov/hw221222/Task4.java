@@ -5,9 +5,13 @@ package de.telran.yuriiarzumanov.hw221222;
 // найти максимальный по модулю элемент массива. Подсказка: модуль числа Math.abs(..)
 
 
+import java.util.Scanner;
 
 public class Task4 {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int
+
 
     }
 
