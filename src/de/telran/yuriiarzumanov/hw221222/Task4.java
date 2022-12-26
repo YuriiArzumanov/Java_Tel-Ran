@@ -8,10 +8,11 @@ import java.util.Scanner;
 
 public class Task4 {
     public static void main(String[] args){
-
-
-    }
-
-
+        int [] myArray = new int[7] ;
+        System.out.println(myArray.length);
 
     }
+
+
+
+}

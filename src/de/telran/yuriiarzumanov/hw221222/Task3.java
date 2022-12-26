@@ -4,15 +4,9 @@ package de.telran.yuriiarzumanov.hw221222;
 
 public class Task3 {
     public static void main(String[] args) {
-        String[] str = new String[5];
-        str[0] = " Mukha ";
-        str[1] = " Arzumanov ";
-        str[2] = " Ambrosio ";
-        str[3] = " Pagano " ;
-        str[4] = " Russo " ;
+        String[] str = new String[] { " Mukha " , " Arzumanov " ," Ambrosio " ," Pagano " ," Russo "};
         for (int i = 0; i < str.length; i++) {
             System.out.println(str[i]);
-
         }
     }
 }
