@@ -11,7 +11,7 @@ package de.telran.yuriiarzumanov.hw221222;
 //Деление на него элементов массива
 public class Task5 {
     public static void main(String[] args) {
-        int[] myArray = new int[6];
+        int[] myArray = new int[70];
         for (int i = 0; i < myArray.length; i++) {
             myArray[i] = i + 1;
             System.out.println(myArray[i]);
@@ -20,8 +20,12 @@ public class Task5 {
             System.out.println(myArray[j]);
         }
 
+
+
     }
+
 }
+
 
 
 
