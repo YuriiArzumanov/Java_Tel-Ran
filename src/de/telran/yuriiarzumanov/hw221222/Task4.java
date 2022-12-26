@@ -4,14 +4,13 @@ package de.telran.yuriiarzumanov.hw221222;
 // после заполняется случайными числами,
 // найти максимальный по модулю элемент массива. Подсказка: модуль числа Math.abs(..)
 
-import java.util.Scanner;
+
 
 public class Task4 {
-    public static void main(String[] args){
-        int [] myArray = new int[7] ;
-        System.out.println(myArray.length);
+    public static void main(String[] args) {
 
     }
+
 
 
 

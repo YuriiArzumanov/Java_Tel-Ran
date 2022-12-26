@@ -6,6 +6,9 @@ package de.telran.yuriiarzumanov.hw221222;
 
 public class Task1level1 {
     public static void main(String[] args) {
+        char[] first = {'a','b','c','d','e'};
+        char[] second = {'f','g','h','i','g'};
+
 
     }
 }
