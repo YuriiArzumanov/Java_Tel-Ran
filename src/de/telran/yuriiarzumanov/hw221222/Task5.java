@@ -12,6 +12,7 @@ package de.telran.yuriiarzumanov.hw221222;
 public class Task5 {
     public static void main(String[] args) {
         int[] myArray = new int[70];
+        int sum = 0 ;
         for (int i = 0; i < myArray.length; i++) {
             myArray[i] = i + 1;
             System.out.println(myArray[i]);
@@ -19,8 +20,10 @@ public class Task5 {
         for (int j = myArray.length - 1 ; j >= 0 ; j--) {
             System.out.println(myArray[j]);
         }
-
-
+        for (int i = 0; i < myArray.length; i++) {
+            sum = sum + myArray[i];
+        }
+        System.out.println(sum);
 
     }
 
