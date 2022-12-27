@@ -8,6 +8,7 @@ package de.telran.yuriiarzumanov.hw221222;
 // равно 5, а начинается она с 9-го элемента.
 public class Task3level1 {
     public static void main(String[] args) {
+
     }
 }
 
