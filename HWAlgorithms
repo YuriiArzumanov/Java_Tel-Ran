@@ -1,0 +1,11 @@
+ 1 уровень сложности: Level 1
+
+Приведите несколько примеров применения хеш-функций в реальной жизни.
+Создайте ключ RSA и скиньте его в открытом виде.
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQD6u+XKpSZMNh8jl8AUb2Bp6DLRowERYBkj2B9ZU3pGcPpq7br/j1JS04pADhivCE5NdWsXLd9km8j
+5qb8o1aJziJOYZMyP0qEZ7Qts2QqWEUPQsua5UozRN6vOBuK9mXsOeNN5WEYNDZLv+yEKAiZu+00pyDWDIx3s1wIG4Q6VMOfMZLkl8cum0DXxeAZjr
+VBWkMGLAAZEwgWNRC7cpP21gCRyXdY39Xx4i6av+xLkkUI7Jo5gwMWALbVygYS/BbVk0NR1z217xzpTE0ICeEV4UgJzZeW73XOq3S4zlbHikpW2CdHF
+uuXrko8zpT0sEuJqveWnqRvugzbWv6tCAklozGsr2uypKljDz0eBzAt5WGHczq/J6l9Z792uYNtA4+Q7D6LAXEkFCn3nL4IXmvsImdAcv3iuvOF2cd9I
+CHNxDmRwymaJWpJqqql+F7krtx78Memnty1N0R51xQpR2DDkdqo4ghmpEkAWVgdi2Q28ha7vzfNN72MDPkLwOOdr8kk= yuriiarzumanov@MBP-Yurii.homenet.telecomitalia.it
+yuriiarzumanov@MBP-Yurii ~ % 
