@@ -1,0 +1,18 @@
+1.Выведите данные о билетах разной ценовой категории. Среди билетов эконом класса (Economy)
+добавьте в выборку билеты с ценой от 10 000 до 11 000 включительно. Среди билетов комфорт-класса (PremiumEconomy)  
+билеты с ценой от 20 000 до 30 000 включительно. Среди билетов бизнес-класса (Business) — с ценой строго больше 100 000.
+В решении необходимо использовать оператор CASE.
+В выборке должны присутствовать три атрибута — id, service_class, price.
+
+SELECT
+  id,
+  service_class,
+  price
+FROM
+  tickets
+WHERE
+  service_class = 'Economy' AND price BETWEEN 10000 AND 11000
+  OR
+  service_class = 'PremiumEconomy' AND price BETWEEN 20000 AND 30000
+  OR
+  service_class = 'Business' AND price > 100000;
