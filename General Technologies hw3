@@ -1,0 +1,56 @@
+
+1.Создайте таблицу staff со следующими полями :
+id - целое число
+first_name - строка макс длиной 50
+surname - строка макс длиной 50
+salary - целое число
+
+2.Заполните таблицу несколькими строками используя insert (6 строк)
+
+
+3.Добавьте поле age - целое число со значением по умолчанию 0
+
+
+4.Переименуйте поле age в staff_age
+
+
+5.Проставьте значение в поле staff_age - из диапазона 20 - 50
+
+
+6.Создайте 2 преставления view, первое должно выбирать всех работников чей возраст меньше 35,
+второе - чей больше
+
+
+7.Скопируйте таблице staff в новую временную person , в которую должны копироваться только колонки
+относящиеся к личности - имя , фамилия,  возраст 
+
+
+8.Удалите временную таблицу.
+
+
+
+
+create table staff (
+ id int,
+ first_name varchar (50),
+ surname varchar (50),
+ salary int
+ );
+ select * from staff;
+ 
+ insert into staff values (1,'Yurii','Yuriis',20000),
+						  (2,'Georgio','Roccha',50000),
+						  (3,'Daria','Darius',70000),
+                          (4,'Misha','Mukha',25000),
+                          (5,'Ararat','Avakyan',30000),
+                          (6,'Albert','Arzumanov',80000);
+                          
+select * from staff;                        
+                          
+ alter table staff
+ add age int default 0;
+ 
+ select * from staff;
+ 
+ alter table staff
+ change age staff_age int;
