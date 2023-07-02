@@ -16,3 +16,67 @@ WHERE
   service_class = 'PremiumEconomy' AND price BETWEEN 20000 AND 30000
   OR
   service_class = 'Business' AND price > 100000;
+
+-----------------------------------------------------------------------------------------------------------
+Level 1: Используем базу airport: 1.Выведите данные о билетах разной ценовой категории. Среди билетов эконом класса
+(Economy) добавьте в выборку билеты с ценой от 10 000 до 11 000 включительно. Среди билетов комфорт-класса (PremiumEconomy) — 
+билеты с ценой от 20 000 до 30 000 включительно. Среди билетов бизнес-класса (Business) — с ценой строго больше 100 000. 
+В решении необходимо использовать оператор CASE. В выборке должны присутствовать три атрибута — id, service_class, price. 
+2.Разделите самолеты на три класса по возрасту. Если самолет произведен раньше 2000 года, то отнесите его к классу 'Old'. 
+Если самолет произведен между 2000 и 2010 годами включительно, то отнесите его к классу 'Mid'. Более новые самолеты отнесите к классу 'New'. 
+Исключите из выборки дальнемагистральные самолеты с максимальной дальностью полета больше 10000 км. Отсортируйте выборку по классу возраста в порядке возрастания.
+В выборке должны присутствовать два атрибута — side_number, age. 3.Руководство авиакомпании снизило цены на билеты рейсов LL4S1G8PQW, 0SE4S0HRRU и JQF04Q8I9G. 
+Скидка на билет эконом класса (Economy) составила 15%, на билет бизнес-класса (Business) — 10%, а на билет комфорт-класса (PremiumEconomy) — 20%. 
+Определите цену билета в каждом сегменте с учетом скидки. В выборке должны присутствовать три атрибута — id, trip_id, new_price. Используйте базу данных HR: 
+1.Вывести сотрудников, работающих в департаментах с id 60, 90 и 110, отсортированными в алфавитном порядке по фамилии 2.Вывести сотрудников, 
+работающих в департаментах с id 60, 90 и 110, отсортированными в алфавитном порядке по фамилии 3.Вывести сотрудников, чьи имена начинаются 
+на букву D и отсортировать их в алфавитном порядке по фамилии Level 2:
+
+Teacher's comment: Хорошо, но не все задачи есть, только одна.
+Скину пример как делать :
+
+
+1.SELECT id, serviceclass, price 
+from tickets 
+WHERE
+    CASE serviceclass
+        WHEN 'Business' THEN price > 100000
+        WHEN 'PremiumEconomy' THEN price BETWEEN 20000 AND 30000
+        WHEN 'Economy' THEN price BETWEEN 10000 AND 11000
+    END
+
+
+2.SELECT sidenumber,
+       CASE
+           WHEN productionyear < 2000 THEN 'Old'
+           WHEN production_year <= 2010 THEN 'Mid'
+           ELSE 'New'
+        END age
+FROM airliners
+WHERE range <= 10000
+ORDER BY age
+
+3.SELECT id, tripid, 
+                CASE
+           WHEN serviceclass = 'Business' THEN price * 0.9
+           WHEN serviceclass = 'Economy' THEN price * 0.85
+           WHEN serviceclass = 'PremiumEconomy' THEN price * 0.8
+         END newprice
+FROM tickets WHERE tripid IN ('LL4S1G8PQW', '0SE4S0HRRU', 'JQF04Q8I9G')
+
+
+HR:
+
+
+SELECT
+    *
+FROM employees
+WHERE departmentid in (60, 90, 110)
+ORDER BY lastname;
+
+
+SELECT
+    *
+FROM employees
+WHERE firstname like 'D%'
+ORDER BY lastname;
