@@ -104,3 +104,6 @@ create database shop;
  ('Форма',9,450,'Y');
  
  select * from goods_2;
+
+
+select * from good where title in (select title from goods2 where price>1000)
